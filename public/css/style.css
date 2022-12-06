@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:ital,wght@0,800;1,100&family=Roboto:ital,wght@1,900&display=swap");
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +8,7 @@
 body {
   margin: 0;
   height: 100vh;
+  font-family: Roboto, sans-serif;
 }
 
 .header__logo {
@@ -15,8 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  border-bottom: solid rgba(242, 235, 235, 0.5);
   font-family: shrikhand, sans-serif;
+  box-shadow: 1px 5px rgba(242, 235, 235, 0.5);
 }
 
 .loader {
@@ -26,7 +28,7 @@ body {
   transform: translateY(-50%, -50%);
   width: 100%;
   height: 100%;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   background-size: cover;
   background-position: center;
@@ -38,7 +40,7 @@ body {
   width: 16px;
   height: 16px;
   top: 50%;
-  left: 50%;
+  left: 46%;
   filter: blur(4px);
   background: #000;
   border-radius: 50%;
@@ -47,7 +49,7 @@ body {
 .loader .dots {
   position: absolute;
   top: 50%;
-  left: 51%;
+  left: 47%;
   animation: points 2.8s 5;
 }
 .loader .dots span {
@@ -77,10 +79,12 @@ body {
   }
 }
 .location {
-  background-color: rgba(197, 197, 197, 0.4392156863);
+  background-color: #99e2d0;
   width: 100%;
-  font-size: 75px;
+  font-size: 1.2rem;
+  font-weight: 300;
   display: flex;
+  padding-left: 9rem;
   justify-content: center;
 }
 .location input {
@@ -88,33 +92,115 @@ body {
   height: 50px;
   font-size: 25px;
   background-color: transparent;
-  justify-content: center;
   border: none;
 }
 .location input::placeholder {
   color: rgba(32, 32, 32, 0.95);
 }
-.location i {
-  position: relative;
-  margin-right: 1.5em;
-  margin-top: 0.4em;
-  font-size: 25px;
+.location .fa-map-marker {
+  margin-top: 0.7rem;
+  padding-right: 1rem;
+  font-size: 1.3em;
 }
 
 .message {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background: rgba(197, 197, 197, 0.4392156863);
 }
 .message .message__title {
-  font-size: 2.3rem;
-  font-family: sans-serif;
+  font-size: 2.4rem;
+  font-family: Raleway;
 }
 .message .message__intro {
   margin: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 2.5em;
+  font-family: Raleway;
+  color: rgba(70, 67, 67, 0.4392156863);
 }
-.message .massage__btn {
+
+.fonctionnement__container {
+  align-self: center;
+  padding: 0 1rem 1rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.massage__btn {
   text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: scale 1s;
+  transform: scale(1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0.3rem 0.3rem 5px;
+  background-image: linear-gradient(300deg, #9356DC, #ff79da);
+}
+
+ol {
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (max-width: 921px) {
+  ol {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+ol .fonctionnement__container__step {
+  background-color: rgb(241, 241, 241);
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+ol .fonctionnement__container__step:hover {
+  background-color: ligthen(#9356DC, 35%);
+}
+ol .fonctionnement__container__step:hover i {
+  color: #9356DC;
+}
+
+.fonctionnement__container__steps li {
+  counter-increment: li;
+  list-style: none;
+}
+@media screen and (max-width: 576px) {
+  .fonctionnement__container__steps li {
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+  }
+}
+.fonctionnement__container__steps li:before {
+  display: inline-block;
+  content: counter(li);
+  line-height: 1rem;
+  padding: 0.6rem 1.2rem 1.4rem 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  align-items: center;
+  border-radius: 100%;
+  background: #9356DC;
+  color: white;
+  margin-left: -2rem;
+  text-align: center;
+}
+
+.fonctionnement__container__steps .fa {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

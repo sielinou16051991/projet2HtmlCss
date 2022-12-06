@@ -1,5 +1,9 @@
+@import "./outils/variables";
 @import "./partials/allPages";
 @import "./partials/header";
 @import "./components/loader";
 @import "./outils/keyframes";
-@import "./pages/accueuil"
+@import "./outils/mixins";
+@import "./pages/accueuil";
+@import "./components/buttons";
+@import "./components/cards";
