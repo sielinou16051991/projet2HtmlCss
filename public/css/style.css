@@ -95,7 +95,7 @@ body {
   border: none;
 }
 .location input::placeholder {
-  color: rgba(32, 32, 32, 0.95);
+  color: rgba(38, 38, 38, 0.95);
 }
 .location .fa-map-marker {
   margin-top: 0.7rem;
@@ -129,6 +129,31 @@ body {
   .fonctionnement__container {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(241, 241, 241);
+    justify-content: space-around;
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+}
+
+.section__title {
+  padding-left: 1rem;
+}
+
+.container {
+  align-self: center;
+  padding: 0 1rem 1rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(241, 241, 241);
     justify-content: space-around;
   }
 }
@@ -194,13 +219,66 @@ ol .fonctionnement__container__step:hover i {
   align-items: center;
   border-radius: 100%;
   background: #9356DC;
-  color: white;
+  color: #fff;
   margin-left: -2rem;
   text-align: center;
 }
 
 .fonctionnement__container__steps .fa {
   padding: 1rem;
+}
+
+.restaurants__card {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .restaurants__card {
+    width: 45%;
+    margin: 1rem;
+    flex-direction: row;
+  }
+}
+.restaurants__card::hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0.3rem 0.3rem 5px;
+}
+.restaurants__card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card__img {
+  width: 100%;
+  height: 15rem;
+  position: relative;
+}
+.card__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card__new {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem 1rem 1rem;
+}
+
+.card__content h2 {
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

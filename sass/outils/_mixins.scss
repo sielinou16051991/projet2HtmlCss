@@ -17,6 +17,7 @@
     @media screen and (min-width: map-get($breakpoints, medium)){
         display: flex;
         flex-wrap: wrap;
+        background-color: $colour-backgroud;
         justify-content: space-around;
     }
 }
@@ -33,5 +34,13 @@
     @media screen and (max-width: map-get($breakpoints, small)) {
         font-size: .9rem;
         line-height: .8rem;
+    }
+}
+
+@mixin  tabletCards {
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+        width: 45%;
+        margin: 1rem;
+        flex-direction: row;
     }
 }

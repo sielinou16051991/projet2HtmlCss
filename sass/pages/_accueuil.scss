@@ -16,7 +16,7 @@
         border: none;
     }
     input::placeholder{
-        color: rgba(32, 32, 32, 0.95);
+        color: rgba(38, 38, 38, 0.95);
     }
 
     .fa-map-marker{
@@ -25,8 +25,6 @@
         font-size: 1.3em;
     }
 }   
-
-
 
 .message {
     text-align: center;
@@ -50,6 +48,23 @@
 }
 
 .fonctionnement__container{
+    align-self: center;
+    padding: 0 1rem 1rem 1rem;
+    @include tabletContainer;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $colour-backgroud;
+}
+
+.section__title{
+    padding-left: 1rem;
+}
+
+.container {
     align-self: center;
     padding: 0 1rem 1rem 1rem;
     @include tabletContainer;
