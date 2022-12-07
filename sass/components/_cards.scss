@@ -99,3 +99,52 @@ ol {
         margin-bottom: .5rem;
     }
 }
+.card__title{
+    margin: 0;
+}
+
+.card__btn {
+    margin-top: 1rem;
+    position: relative;
+    cursor: pointer;
+
+    .card__like {
+        position: absolute;
+    }
+    
+    &:hover {
+        .heart--outline{
+            display: none;
+            opacity: 0;
+        }
+    }
+    &:hover {
+        .heart--bg{
+            display: block;
+            transition: opacity 1s;
+            opacity: 1;
+        }
+    }
+
+    .heart--outline {
+        opacity: 1;
+
+        &:active{
+            display: none;
+            color: transparent;
+        }
+    }
+
+    .heart--bg {
+        opacity: 0;
+        background-image: $colour-dual-start;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:active{
+            display: block;
+            opacity: 1;
+        }
+    }
+}
