@@ -17,7 +17,6 @@
     @media screen and (min-width: map-get($breakpoints, medium)){
         display: flex;
         flex-wrap: wrap;
-        background-color: $colour-backgroud;
         justify-content: space-around;
     }
 }

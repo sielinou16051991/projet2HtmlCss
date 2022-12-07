@@ -51,6 +51,7 @@
     align-self: center;
     padding: 0 1rem 1rem 1rem;
     @include tabletContainer;
+    @include tabletCards;
 }
 
 .restaurants {

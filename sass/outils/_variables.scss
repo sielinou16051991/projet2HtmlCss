@@ -6,6 +6,7 @@ $colour-dual-start: linear-gradient(300deg, $colour-primary, $colour-secondary);
 $colour-dual-end: linear-gradient(120deg, $colour-primary, $colour-secondary);
 $colour-shadow: rgba(0 0 0 / 0.3);
 $shadow-size: 0.3rem 0.3rem 5px;
+$colour-footer: #303030;
 
 $breakpoints: (
     small: 576px,

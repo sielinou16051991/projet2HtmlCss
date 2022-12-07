@@ -1,0 +1,36 @@
+.footer__logo {
+    font-family: shrikhand, sans-serif;
+}
+.footer__all__page {
+    background-color: $colour-footer;
+    text-decoration: none;
+    color: #fff;
+    min-height: 100%;
+
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin: .5rem 0 .5rem 0;
+    }
+}
+
+.fa-cutlery {
+    margin-right: 1rem;
+}
+.fa-handshake-o {
+    margin-right: 0.55rem;
+    transform: rotate(-40deg) scale(1.2);
+
+}
+
+.container__footer {
+    padding: 1.5rem;
+}
