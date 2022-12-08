@@ -1,6 +1,6 @@
 $colour-primary: #9356DC;
-$colour-secondary: #ff79da;
-$colour-tertiary: #99e2d0;
+$colour-secondary: #FF79DA;
+$colour-tertiary: #99E2D0;
 $colour-backgroud: rgba(241, 241, 241, 1);
 $colour-dual-start: linear-gradient(300deg, $colour-primary, $colour-secondary);
 $colour-dual-end: linear-gradient(120deg, $colour-primary, $colour-secondary);
@@ -12,5 +12,5 @@ $breakpoints: (
     small: 576px,
     medium: 768px,
     large: 921px,
-    v-large: 1023px,
+    desktop: 1023px,
 );
