@@ -21,7 +21,7 @@
     }
 }
 
-@mixin bulletLargeBreakpoint {
+@mixin fonctionnementLargeBreakpoint {
     @media screen and (max-width: map-get($breakpoints, large)) {
         display: flex;
         justify-content: space-around;
@@ -29,7 +29,7 @@
     }
 }
 
-@mixin bulletSmallBreakpoint {
+@mixin fonctionnementSmallBreakpoint {
     @media screen and (max-width: map-get($breakpoints, small)) {
         font-size: .9rem;
         line-height: .8rem;
@@ -38,8 +38,14 @@
 
 @mixin  tabletCards {
     @media screen and (max-width: map-get($breakpoints, medium)) {
-        width: 45%;
-        margin: 1rem;
+        width: 100%;
+        margin: 1rem 0rem 1rem 0rem;
         flex-direction: row;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: map-get($breakpoints, small )){
+        display: flex;
+        flex-direction: column;
     }
 }

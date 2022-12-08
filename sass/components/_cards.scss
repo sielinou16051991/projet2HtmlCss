@@ -3,9 +3,10 @@ ol {
         padding-left: 0;
         width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        flex-direction: column;
-        @include bulletLargeBreakpoint;
+        @include fonctionnementLargeBreakpoint;
+        @include mobile;
 
     .fonctionnement__container__step{
         background-color: $colour-backgroud;
@@ -27,7 +28,7 @@ ol {
 .fonctionnement__container__steps li {
     counter-increment: li;
     list-style: none;
-    @include bulletSmallBreakpoint;
+    @include fonctionnementSmallBreakpoint;
     &:before {
         display: inline-block;
         content: counter(li);

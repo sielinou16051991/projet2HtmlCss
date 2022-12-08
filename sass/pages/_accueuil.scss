@@ -50,8 +50,10 @@
 .fonctionnement__container{
     align-self: center;
     padding: 0 1rem 1rem 1rem;
-    @include tabletContainer;
-    @include tabletCards;
+}
+
+.fonctionnement__title{
+    padding: 2rem 0rem 0rem 1.5rem;
 }
 
 .restaurants {
@@ -62,7 +64,7 @@
 }
 
 .section__title{
-    padding-left: 1rem;
+    padding: 2rem 0rem 0rem 1.5rem;
 }
 
 .container {
