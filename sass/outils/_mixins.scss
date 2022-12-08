@@ -49,3 +49,15 @@
         flex-direction: column;
     }
 }
+@mixin mobile--Loader{
+    @media screen and (max-width: map-get($breakpoints, small )){
+        left: 42.5%;
+    }
+}
+
+@mixin desktop--Loader{
+    @media screen and (max-width: map-get($breakpoints, v-large)) {
+        left: 46%;
+    }
+}
+

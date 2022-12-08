@@ -1,9 +1,8 @@
-
+@import "../outils/mixins";
 .loader{
     position: fixed;
     top: 0%;
     left: 0%;
-    transform: translateY(-50%, -50%);
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -18,7 +17,8 @@
         width: 16px;
         height: 16px;
         top: 50%;
-        left: 46%;
+        left: 45.5%;
+        @include mobile--Loader;
         filter: blur(4px);
         background: #000;
         border-radius: 50%;
