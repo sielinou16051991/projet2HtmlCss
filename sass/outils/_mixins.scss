@@ -2,13 +2,14 @@
     box-shadow: $colour $size;
 }
 @mixin button {
+    position: relative;
     color: #ffffff;
     padding: 1rem;
     font-size: 1.1rem;
     border-radius: 5rem;
     cursor: pointer;
     transition: scale 1s;
-    transform: scale(1);
+    transform: scale(1) ;
     @include box-shadow;
     background-image: $colour-dual-start;
 }

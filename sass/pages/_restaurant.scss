@@ -1,0 +1,22 @@
+.return--arrow{
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.header__img{
+    width: 100%;
+    
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.menu__title{
+    font-family: shrikhand;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}

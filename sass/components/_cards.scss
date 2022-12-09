@@ -17,6 +17,8 @@ ol {
 
         &:hover{
             background-color: ligthen($colour-primary, 35%);
+            transform: translate(1rem, -1rem);
+            transition: 500ms ease-in-out;
 
             i {
                 color: $colour-primary;
@@ -63,7 +65,7 @@ ol {
     border-radius: 1rem;
     @include tabletCards;
 
-        &::hover{
+        &:hover{
             @include box-shadow;
         }
 

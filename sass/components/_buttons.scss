@@ -1,4 +1,11 @@
     .massage__btn{
         text-decoration: none;
+        display: inline-block;
         @include button;
+
+        &:hover {
+            transition: 2s ease;
+            color: black;
+            transform: scale(1.5);
+        }
     }
