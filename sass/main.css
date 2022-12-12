@@ -113,6 +113,24 @@ body {
     display: none;
   }
 }
+@-webkit-keyframes move-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+@keyframes move-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
 .location {
   background-color: #99E2D0;
   width: 100%;
@@ -380,6 +398,61 @@ ol .fonctionnement__container__step:nth-child(1) i {
   opacity: 1;
 }
 
+/*-----------------------------RESTAURANTS------------------------*/
+.submenu__card {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 1rem 0 0 0;
+  padding: 0 0 0 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0.3rem 0.3rem 5px;
+}
+.submenu__card .submenu__card--header {
+  padding: 0 0 1rem 0;
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.submenu__card .submenu__card--header p {
+  margin: 0.5rem 0 0 0;
+}
+.submenu__card .submenu__card--header .card__title {
+  font-family: shrikhand;
+}
+.submenu__card .submenu__card--header .card__subtitle {
+  color: #99E2D0 #9356DC;
+}
+.submenu__card .card--checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  font-size: 1.6rem;
+  transition: width 0.5s;
+  border-radius: 0 1rem 1rem 0;
+  color: #fff;
+}
+.submenu__card:hover .card--checked {
+  width: 5rem;
+  display: flex;
+  background-color: rgb(196, 155, 155);
+}
+.submenu__card .fa {
+  opacity: 0;
+  transition-delay: 0.5s;
+  transition: transform 0.5s ease-in-out;
+}
+.submenu__card:hover .fa {
+  opacity: 1;
+  transform: rotate(1turn);
+}
+.submenu__card .card--price {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
 .footer__logo {
   font-family: shrikhand, sans-serif;
 }
@@ -431,9 +504,90 @@ ol .fonctionnement__container__step:nth-child(1) i {
   width: 100%;
 }
 
-.menu__title {
+.menu__app {
+  position: relative;
+  border-radius: 35px 35px 0px 0px;
+  margin-top: -2rem;
+  background-color: rgb(241, 241, 241);
+  padding: 1rem 1rem 3rem 1rem;
+}
+@media screen and (min-width: 1023px) {
+  .menu__app {
+    padding-right: 0;
+  }
+}
+
+.container__app {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container__app {
+  padding: 1rem;
+}
+.container__app .menu__title {
   font-family: shrikhand;
-  text-align: center;
-  justify-content: center;
   font-size: 1.6rem;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-bottom: 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container__header .menu__btn {
+  margin-top: 0.2rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .submenu {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .submenu__begin {
+    width: 33%;
+    margin: 0;
+  }
+}
+
+.submenu__card {
+  -webkit-animation-name: move-up;
+          animation-name: move-up;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@media screen and (min-width: 1023px) {
+  .submenu__card {
+    max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.delay--1 {
+  opacity: 0;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }/*# sourceMappingURL=main.css.map */

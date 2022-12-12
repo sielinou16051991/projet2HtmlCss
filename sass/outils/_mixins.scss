@@ -57,8 +57,24 @@
 }
 
 @mixin desktop--Loader{
-    @media screen and (max-width: map-get($breakpoints, v-large)) {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
         left: 46%;
     }
 }
 
+@mixin submenuLargeBreackPoint {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+    }
+}
+
+@mixin submenuCardLargeBreakPoint {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        max-width: 90%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

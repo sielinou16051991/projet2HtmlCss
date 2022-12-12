@@ -157,3 +157,69 @@ ol {
         }
     }
 }
+
+/*-----------------------------RESTAURANTS------------------------*/
+
+.submenu__card{
+    display: flex;
+    justify-content: space-between;
+    //align-items: stretch;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 1rem 0 0 0;
+    padding: 0 0 0 0.5rem;
+    @include box-shadow;
+
+    .submenu__card--header {
+        padding: 0 0 1rem 0;
+        flex-grow: 1;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        p{
+            margin: .5rem 0 0 0;
+        }
+
+        .card__title{
+            font-family: shrikhand;
+        }
+        .card__subtitle{
+            color: $colour-tertiary $colour-primary;
+        }
+    }
+
+    .card--checked{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        font-size: 1.6rem;
+        transition: width .5s;
+        border-radius: 0 1rem 1rem 0;
+        color: #fff;
+    }
+
+    &:hover .card--checked {
+        width: 5rem;
+        display: flex;
+        background-color: rgb(196, 155, 155);
+    }
+
+    .fa{
+        opacity: 0;
+        transition-delay: .5s;
+        transition: transform .5s ease-in-out;
+    }
+
+    &:hover .fa{
+        opacity: 1;
+        transform: rotate(1turn);
+    }
+
+    .card--price{
+        margin: 2rem 1rem 1rem 1rem;
+    }
+}
