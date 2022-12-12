@@ -75,6 +75,22 @@
     }
 }
 
+.submenu__title{
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+
+    &::after {
+        content: "";
+        width: 3rem;
+        height: .2rem;
+        left: 2rem;
+        top: 6.5rem;
+        position: absolute;
+        background-color: $colour-tertiary;
+    }
+}
 .submenu__card{
     @include submenuCardLargeBreakPoint;
 
@@ -87,5 +103,5 @@
 
 .delay--1 {
     opacity: 0;
-    animation-delay: .1s;
+    animation-delay: .75s;
 }
