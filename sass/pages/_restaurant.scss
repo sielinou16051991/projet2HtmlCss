@@ -8,9 +8,13 @@
 .header__img{
     width: 100%;
     
+    
     img {
         object-fit: cover;
         width: 100%;
+
+        @include mobileRestauranHeader-img;
+        @include desktopRestauranHeader-img;
     }
 }
 
@@ -19,7 +23,7 @@
     border-radius: 35px 35px 0px 0px;
     margin-top: -2rem;
     background-color: $colour-backgroud;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem 0rem 0rem 0rem;
 
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         padding-right: 0;

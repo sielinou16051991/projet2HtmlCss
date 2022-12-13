@@ -26,6 +26,13 @@
         width: 45%;
     }
 }
+@mixin desktopRestauranHeader-img {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        width: 100%;
+        height: 35rem;
+
+    }
+}
 @mixin desktop--Loader{
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         top: 45%;
@@ -87,6 +94,11 @@
     @media screen and (max-width: map-get($breakpoints, small )){
         top: 45%;
         left: 40%;
+    }
+}
+@mixin mobileRestauranHeader-img {
+    @media screen and (max-width: map-get($breakpoints, small)) {
+        height: 25rem;
     }
 }
 @mixin fonctionnementSmallBreakpoint {
