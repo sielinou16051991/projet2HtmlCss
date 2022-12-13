@@ -4,14 +4,15 @@
     width: 100%;
     font-size: 1.2rem;
     display: flex;
-    padding-left: 9rem;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     
     input{
         padding: 1rem 0 1rem 0;
         height: 50px;
         font-size: 25px;
-        width: 43%;
+        width: 12rem;
         background-color: transparent;
         border: none;
     }
@@ -20,7 +21,7 @@
     }
 
     .fa-map-marker{
-        margin-top: .7rem;
+        margin-top: .1rem;
         padding-right: 1rem;
         font-size: 1.3em;
     }
