@@ -83,7 +83,7 @@
 
 
 
-/*-----------Mobile--------------------------*/
+/*-----------Mobile---------------------------*/
 @mixin mobile{
     @media screen and (max-width: map-get($breakpoints, small )){
         display: flex;
