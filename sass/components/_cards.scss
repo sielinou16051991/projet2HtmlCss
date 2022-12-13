@@ -64,6 +64,7 @@ ol {
     margin-bottom: 1rem;
     border-radius: 1rem;
     @include tabletCards;
+    @include desktopCard;
 
         &:hover{
             @include box-shadow;

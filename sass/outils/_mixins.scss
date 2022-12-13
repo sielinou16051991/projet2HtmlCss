@@ -14,55 +14,24 @@
     background-image: $colour-dual-start;
 }
 
-@mixin tabletContainer {
-    @media screen and (min-width: map-get($breakpoints, medium)){
+/*------------desktop----------------------*/
+@mixin desktop{
+    @media screen and (min-width: map-get($breakpoints, desktop )){
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
     }
 }
-
-@mixin fonctionnementLargeBreakpoint {
-    @media screen and (max-width: map-get($breakpoints, large)) {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+@mixin desktopCard{
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        width: 45%;
     }
 }
-
-@mixin fonctionnementSmallBreakpoint {
-    @media screen and (max-width: map-get($breakpoints, small)) {
-        font-size: .9rem;
-        line-height: .8rem;
-    }
-}
-
-@mixin  tabletCards {
-    @media screen and (max-width: map-get($breakpoints, medium)) {
-        width: 100%;
-        margin: 1rem 0rem 1rem 0rem;
-        flex-direction: row;
-    }
-}
-@mixin mobile{
-    @media screen and (max-width: map-get($breakpoints, small )){
-        display: flex;
-        flex-direction: column;
-    }
-}
-@mixin mobile--Loader{
-    @media screen and (max-width: map-get($breakpoints, small )){
-        top: 45%;
-        left: 35%;
-    }
-}
-
 @mixin desktop--Loader{
-    @media screen and (max-width: map-get($breakpoints, desktop)) {
-        left: 46%;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        top: 45%;
+        left: 42.5%;
     }
 }
-
 @mixin submenuLargeBreackPoint {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         align-items: center;
@@ -79,3 +48,51 @@
         text-overflow: ellipsis;
     }
 }
+
+/*-----------Tablette------------------------*/
+@mixin  tabletCards {
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+        width: 100%;
+        margin: 1rem 0rem 1rem 0rem;
+        flex-direction: row;
+    }
+}
+
+@mixin tabletContainer {
+    @media screen and (min-width: map-get($breakpoints, medium)){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@mixin fonctionnementLargeBreakpoint {
+    @media screen and (max-width: map-get($breakpoints, large)) {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+
+
+/*-----------Mobile--------------------------*/
+@mixin mobile{
+    @media screen and (max-width: map-get($breakpoints, small )){
+        display: flex;
+        flex-direction: column;
+    }
+}
+@mixin mobile--Loader{
+    @media screen and (max-width: map-get($breakpoints, small )){
+        top: 45%;
+        left: 40%;
+    }
+}
+@mixin fonctionnementSmallBreakpoint {
+    @media screen and (max-width: map-get($breakpoints, small)) {
+        font-size: .9rem;
+        line-height: .8rem;
+    }
+}
+

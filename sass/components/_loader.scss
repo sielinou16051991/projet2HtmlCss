@@ -20,6 +20,7 @@
         height: 16px;
         top: 50%;
         left: 44%;
+        @include desktop--Loader;
         @include mobile--Loader;
         filter: blur(4px);
         background: #000;
@@ -29,9 +30,8 @@
         
    .dots {
     position: absolute;
-    top: 50%;
-    left: 47%;
-    @include mobile--Loader;
+    top: 45%;
+    left: 44%;
     animation: points 2.8s 5;
         span {
             display: flex;
