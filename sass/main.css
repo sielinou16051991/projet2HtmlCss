@@ -167,7 +167,7 @@ body {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: rgba(197, 197, 197, 0.4392156863);
+  background: rgb(241, 241, 241);
 }
 .message .message__title {
   font-size: 2.4rem;
@@ -399,7 +399,7 @@ ol .fonctionnement__container__step:nth-child(1) i {
 }
 
 /*-----------------------------RESTAURANTS------------------------*/
-.submenu__card {
+.menu__card {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -409,23 +409,23 @@ ol .fonctionnement__container__step:nth-child(1) i {
   padding: 0 0 0 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0.3rem 0.3rem 5px;
 }
-.submenu__card .submenu__card--header {
+.menu__card .menu__card--header {
   padding: 0 0 1rem 0;
   flex-grow: 1;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.submenu__card .submenu__card--header p {
+.menu__card .menu__card--header p {
   margin: 0.5rem 0 0 0;
 }
-.submenu__card .submenu__card--header .card__title {
+.menu__card .menu__card--header .card__title {
   font-family: shrikhand;
 }
-.submenu__card .submenu__card--header .card__subtitle {
+.menu__card .menu__card--header .card__subtitle {
   color: #99E2D0 #9356DC;
 }
-.submenu__card .card--checked {
+.menu__card .card--checked {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,21 +435,21 @@ ol .fonctionnement__container__step:nth-child(1) i {
   border-radius: 0 1rem 1rem 0;
   color: #fff;
 }
-.submenu__card:hover .card--checked {
+.menu__card:hover .card--checked {
   width: 5rem;
   display: flex;
   background-color: rgb(196, 155, 155);
 }
-.submenu__card .fa {
+.menu__card .fa {
   opacity: 0;
   transition-delay: 0.5s;
   transition: transform 0.5s ease-in-out;
 }
-.submenu__card:hover .fa {
+.menu__card:hover .fa {
   opacity: 1;
   transform: rotate(1turn);
 }
-.submenu__card .card--price {
+.menu__card .card--price {
   margin: 2rem 1rem 1rem 1rem;
 }
 
@@ -553,7 +553,7 @@ ol .fonctionnement__container__step:nth-child(1) i {
 }
 
 @media screen and (min-width: 1023px) {
-  .submenu {
+  .menu {
     align-items: center;
     justify-content: space-around;
     display: flex;
@@ -561,19 +561,19 @@ ol .fonctionnement__container__step:nth-child(1) i {
 }
 
 @media screen and (min-width: 1023px) {
-  .submenu__begin {
+  .menu__begin {
     width: 33%;
     margin: 0;
   }
 }
 
-.submenu__title {
+.menu__subtitle {
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
-  font-weight: 100;
+  font-weight: 200;
   text-transform: uppercase;
 }
-.submenu__title::after {
+.menu__subtitle:after {
   content: "";
   width: 3rem;
   height: 0.2rem;
@@ -583,18 +583,34 @@ ol .fonctionnement__container__step:nth-child(1) i {
   background-color: #99E2D0;
 }
 
-.submenu__card {
+.menu__subtitle-2 {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.menu__subtitle-2:after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  left: 2rem;
+  top: 25.5rem;
+  position: absolute;
+  background-color: #99E2D0;
+}
+
+.menu__card {
   -webkit-animation-name: move-up;
           animation-name: move-up;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1023px) {
-  .submenu__card {
+  .menu__card {
     max-width: 90%;
     overflow: hidden;
     white-space: nowrap;
@@ -602,8 +618,57 @@ ol .fonctionnement__container__step:nth-child(1) i {
   }
 }
 
+/*----------------------DELAY D'APPARITION DES DIFFERANTS CARDS (MENUS) ------------------------------*/
 .delay--1 {
   opacity: 0;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.delay--2 {
+  opacity: 0;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.delay--3 {
+  opacity: 0;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+.delay--4 {
+  opacity: 0;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.delay--5 {
+  opacity: 0;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.delay--6 {
+  opacity: 0;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+.delay--7 {
+  opacity: 0;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.delay--8 {
+  opacity: 0;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delay--9 {
+  opacity: 0;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }/*# sourceMappingURL=main.css.map */
