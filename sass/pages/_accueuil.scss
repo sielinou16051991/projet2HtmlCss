@@ -3,7 +3,6 @@
     background-color: $colour-tertiary;
     width: 100%;
     font-size: 1.2rem;
-    font-weight: 300;
     display: flex;
     padding-left: 9rem;
     justify-content: center;
@@ -12,6 +11,7 @@
         padding: 1rem 0 1rem 0;
         height: 50px;
         font-size: 25px;
+        width: 80%;
         background-color: transparent;
         border: none;
     }
