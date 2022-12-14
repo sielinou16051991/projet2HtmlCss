@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:ital,wght@0,800;1,100&family=Roboto:ital,wght@1,900&display=swap');
 /*--------------------FONCTIONNEMENT---------------*/
 ol {
         padding-left: 0;
@@ -175,20 +176,26 @@ ol {
 
     .menu__card--header {
         padding: 0 0 1rem 0;
-        flex-grow: 5;
+        flex-grow: 1;
+        height: auto;
 
         overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        white-space: wrap;
 
         p{
             margin: .5rem 0 0 0;
         }
 
         .card__title{
-            font-family: shrikhand;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-family: Raleway;
         }
         .card__subtitle{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-weight: 400;
+
             color: $colour-tertiary $colour-primary;
         }
     }
@@ -204,11 +211,14 @@ ol {
         color: #fff;
     }
 
-    &:hover .card--checked {
-        width: 5rem;
-        display: flex;
-        background-color: rgb(196, 155, 155);
-    }
+    &:hover {
+        .card--checked {
+            width: 5rem;
+            display: flex;
+            background-color: rgb(196, 155, 155);
+        }
+        
+    } 
 
     .fa{
         opacity: 0;
@@ -222,6 +232,6 @@ ol {
     }
 
     .card--price{
-        margin: 2rem 1rem 1rem 1rem;
+        margin: 2rem 1rem 1rem 0;
     }
 }
